@@ -1,2 +1,4 @@
 ---
 - robertdebock.bootstrap
+- robertdebock.epel
+- robertdebock.python-pip
