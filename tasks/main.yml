@@ -10,10 +10,15 @@
     - "{{ ansible_distribution }}.yml"
     - default.yml
 
+- name: find site-package location
+  command: python -c "import site; print(site.getsitepackages()[0])"
+  register: mitogen_site_packages_path
+  changed_when: false
+
 - name: install mitogen
   unarchive:
     src: https://github.com/dw/mitogen/archive/stable.zip
-    dest: "{{ mitogen_installation_directory }}"
+    dest: "{{ mitogen_site_packages_path.stdout }}"
     remote_src: true
   register: install_mitogen
   until: install_mitogen is succeeded
@@ -24,7 +29,7 @@
     path: "{{ mitogen_ansible_file }}"
     section: defaults
     option: strategy_plugins
-    value: "{{ mitogen_installation_directory }}/mitogen-stable/ansible_mitogen/plugins/strategy"
+    value: "{{ mitogen_site_packages_path.stdout }}/mitogen-stable/ansible_mitogen/plugins/strategy"
   become: true
 
 - name: configure ansible to use mitogen strategy
