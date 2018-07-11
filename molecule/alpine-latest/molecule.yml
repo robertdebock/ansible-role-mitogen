@@ -8,7 +8,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: ara-alpine-latest
+  - name: mitogen-alpine-latest
     image: alpine:latest
 provisioner:
   name: ansible

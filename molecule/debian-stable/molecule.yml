@@ -8,7 +8,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: ara-debian-stable
+  - name: mitogen-debian-stable
     image: debian:stable
 provisioner:
   name: ansible

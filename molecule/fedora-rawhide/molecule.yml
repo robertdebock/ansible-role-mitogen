@@ -8,7 +8,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: ara-fedora-rawhide
+  - name: mitogen-fedora-rawhide
     image: fedora:rawhide
 provisioner:
   name: ansible
