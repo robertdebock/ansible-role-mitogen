@@ -20,6 +20,7 @@
     src: https://github.com/dw/mitogen/archive/stable.zip
     dest: "{{ mitogen_site_packages_path.stdout }}"
     remote_src: true
+    creates: "{{ mitogen_site_packages_path.stdout }}/mitogen-stable"
   register: install_mitogen
   until: install_mitogen is succeeded
   retries: 3
