@@ -6,6 +6,4 @@
 
   roles:
     - role: robertdebock.bootstrap
-    - role: robertdebock.buildtools
-    - role: robertdebock.python_pip
     - role: ansible-role-mitogen

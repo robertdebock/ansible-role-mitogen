@@ -11,21 +11,31 @@
     - default.yml
 
 - name: install mitogen
-  pip:
-    name: mitogen
+  unarchive:
+    src: https://github.com/dw/mitogen/archive/stable.zip
+    dest: /tmp
+    remote_src: true
   register: install_mitogen
   until: install_mitogen is succeeded
   retries: 3
 
-- name: find strategy_plugins path
-  command: python -m mitogen.setup.strategy_plugins
-  changed_when: false
-  register: mitogen_strategy_plugins
+#- name: find strategy_plugins path
+#  shell: pip show mitogen|grep Location|awk '{print $NF}'
+#  changed_when: false
+#  register: mitogen_strategy_plugins
 
 - name: configure ansible to use mitogen
   ini_file:
-    path: "{{ mitogen_anisble_file }}"
+    path: "{{ mitogen_ansible_file }}"
     section: defaults
     option: strategy_plugins
-    value: "{{ mitogen_strategy_plugins.stdout }}"
+    value: /tmp/mitogen-stable/ansible_mitogen/plugins/strategy
+  become: true
+
+- name: configure ansible to use mitogen strategy
+  ini_file:
+    path: "{{ mitogen_ansible_file }}"
+    section: defaults
+    option: strategy
+    value: mitogen_linear
   become: true
