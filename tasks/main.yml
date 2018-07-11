@@ -26,6 +26,6 @@
   ini_file:
     path: "{{ mitogen_anisble_file }}"
     section: defaults
-    option: strategy_plugins 
+    option: strategy_plugins
     value: "{{ mitogen_strategy_plugins.stdout }}"
   become: true
