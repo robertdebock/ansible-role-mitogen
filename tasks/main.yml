@@ -1,0 +1,31 @@
+---
+# tasks file for ara
+- name: load default variables
+  include_vars:
+    file: default.yml
+
+- name: load os-specific variables
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_distribution }}.yml"
+    - default.yml
+
+- name: install mitogen
+  pip:
+    name: mitogen
+  register: install_mitogen
+  until: install_mitogen is succeeded
+  retries: 3
+
+- name: find strategy_plugins path
+  command: python -m mitogen.setup.strategy_plugins
+  changed_when: false
+  register: mitogen_strategy_plugins
+
+- name: configure ansible to use mitogen
+  ini_file:
+    path: "{{ mitogen_anisble_file }}"
+    section: defaults
+    option: strategy_plugins 
+    value: "{{ mitogen_strategy_plugins.stdout }}"
+  become: true
