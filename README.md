@@ -20,7 +20,7 @@ Access to a repository containing packages, likely on the internet.
 Role Variables
 --------------
 
-None known.
+- mitogen_ansible_file: What ansible configration file to place the Mitogen modifications in.
 
 Dependencies
 ------------
