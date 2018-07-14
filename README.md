@@ -28,6 +28,7 @@ Dependencies
 This role can be used to prepare your system:
 
 - [robertdebock.bootstrap](https://travis-ci.org/robertdebock/ansible-role-bootstrap)
+- [robertdebock.epel](https://travis-ci.org/robertdebock/ansible-role-epel)
 - [robertdebock.python_pip](https://travis-ci.org/robertdebock/ansible-role-python_pip)
 
 Download the dependencies by issuing this command:
