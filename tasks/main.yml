@@ -1,5 +1,5 @@
 ---
-# tasks file for ara
+# tasks file for mitogen
 - name: find site-package location
   command: python -c "import site; print(site.getsitepackages()[0])"
   register: mitogen_site_packages_path

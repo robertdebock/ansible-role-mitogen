@@ -10,7 +10,7 @@ Context
 This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
 
 Here is an overview of related roles:
-![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/ara.png "Dependency")
+![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/mitogen.png "Dependency")
 
 Requirements
 ------------
@@ -71,7 +71,7 @@ The simplest way possible:
     - robertdebock.mitogen
 ```
 
-Install this role using `galaxy install robertdebock.ara`.
+Install this role using `galaxy install robertdebock.mitogen`.
 
 License
 -------
