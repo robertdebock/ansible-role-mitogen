@@ -1,10 +1,11 @@
 ---
 - name: Converge
   hosts: all
-  become: true
-  gather_facts: false
+  gather_facts: no
+  become: yes
 
   roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.python_pip
-    - role: ansible-role-mitogen
+    - robertdebock.bootstrap
+    - robertdebock.epel
+    - robertdebock.python_pip
+    - ansible-role-mitogen

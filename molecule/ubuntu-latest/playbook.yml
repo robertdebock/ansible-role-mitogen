@@ -5,6 +5,6 @@
   gather_facts: false
 
   roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.python_pip
-    - role: ansible-role-mitogen
+    - robertdebock.bootstrap
+    - robertdebock.python_pip
+    - ansible-role-mitogen

@@ -2,7 +2,7 @@
 galaxy_info:
   author: Robert de Bock
   role_name: mitogen
-  description: Mitogen is a Python library for writing distributed self-replicating programs.
+  description: The purpose of this role is to install and configure mitogen on your system.
   license: Apache-2.0
   company: none
   min_ansible_version: 2.4
