@@ -9,7 +9,7 @@
   unarchive:
     src: https://github.com/dw/mitogen/archive/stable.zip
     dest: "{{ mitogen_site_packages_path.stdout }}"
-    remote_src: true
+    remote_src: yes
     creates: "{{ mitogen_site_packages_path.stdout }}/mitogen-stable"
   register: install_mitogen
   until: install_mitogen is succeeded
@@ -21,7 +21,7 @@
     section: defaults
     option: strategy_plugins
     value: "{{ mitogen_site_packages_path.stdout }}/mitogen-stable/ansible_mitogen/plugins/strategy"
-  become: true
+  become: yes
 
 - name: configure ansible to use mitogen strategy
   ini_file:
@@ -29,4 +29,4 @@
     section: defaults
     option: strategy
     value: mitogen_linear
-  become: true
+  become: yes
