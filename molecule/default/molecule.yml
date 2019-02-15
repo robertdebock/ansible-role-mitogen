@@ -34,8 +34,10 @@ platforms:
     image: opensuse:leap
   - name: mitogen-opensuse-tumbleweed
     image: opensuse:tumbleweed
-  - name: mitogen-ubuntu-artful
-    image: ubuntu:artful
+  - name: mitogen-ubuntu-latest
+    image: ubuntu:latest
+  - name: mitogen-ubuntu-rolling
+    image: ubuntu:rolling
   - name: mitogen-ubuntu-devel
     image: ubuntu:devel
   - name: mitogen-ubuntu-latest
