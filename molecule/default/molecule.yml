@@ -32,8 +32,6 @@ platforms:
     image: fedora:rawhide
   - name: mitogen-opensuse-leap
     image: opensuse:leap
-  - name: mitogen-opensuse-tumbleweed
-    image: opensuse:tumbleweed
   - name: mitogen-ubuntu-latest
     image: ubuntu:latest
   - name: mitogen-ubuntu-rolling
