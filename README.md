@@ -21,7 +21,6 @@ This example is taken from `molecule/default/playbook.yml`:
     - robertdebock.epel
     - robertdebock.python_pip
     - robertdebock.mitogen
-
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
@@ -36,7 +35,6 @@ These variables are set in `defaults/main.yml`:
 
 # The Ansible configuration to modify for Mitogen.
 mitogen_ansible_file: /etc/ansible/ansible.cfg
-
 ```
 
 Requirements
