@@ -5,6 +5,12 @@
   register: mitogen_site_packages_path
   changed_when: no
 
+- name: create site-packages location
+  file:
+    path: "{{ mitogen_site_packages_path.stdout }}"
+    state: directory
+    recurse: yes
+
 - name: install mitogen
   unarchive:
     src: https://github.com/dw/mitogen/archive/stable.zip

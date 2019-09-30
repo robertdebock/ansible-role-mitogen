@@ -6,6 +6,9 @@ mitogen
 
 Install and configure mitogen on your system.
 
+<img src="https://img.shields.io/ansible/role/d/27431"/>
+<img src="https://img.shields.io/ansible/quality/27431"/>
+
 Example Playbook
 ----------------
 
@@ -69,6 +72,7 @@ This role uses the following modules:
 ```yaml
 ---
 - command
+- file
 - ini_file
 - unarchive
 ```
