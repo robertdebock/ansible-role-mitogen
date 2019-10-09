@@ -5,6 +5,7 @@
   gather_facts: no
 
   roles:
-    - robertdebock.bootstrap
-    - robertdebock.epel
-    - robertdebock.python_pip
+    - role: robertdebock.bootstrap
+    - role: robertdebock.core_dependencies
+    - role: robertdebock.epel
+    - role: robertdebock.python_pip
