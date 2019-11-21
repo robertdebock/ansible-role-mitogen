@@ -41,6 +41,5 @@ galaxy_info:
     - cloud
     - mitogen
     - rhel
-    - ubuntu
 
 dependencies: []
