@@ -7,22 +7,22 @@ about: Create a report to help us improve
 **Describe the bug**
 A clear and concise description of what the bug is.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Playbook**
+Please paste the playbook you are using. (Consider `requirements.yml` and
+optionally the command you've invoked.)
+
+
+```yaml
+YOUR PLAYBOOK HERE
+```
+
+**Output**
+Show at least the error, possible related output, maybe just all the output.
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
-**Logfiles**
-If applicable, add logs to help explain your problem.
-
 **Environment**
- - OS: [e.g. CentOS]
-- Ansible version of control node: [e.g. 2.6.2]
-
-**Additional context**
-Add any other context about the problem here.
+- Control node OS: [e.g. Debian 9] (`cat /etc/os-release`)
+- Control node Ansible version: [e.g. 2.9.1] (`ansible --version`)
+- Managed node OS: [e.g. CentOS 7] (`cat /etc/os-release`)
