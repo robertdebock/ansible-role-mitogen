@@ -2,9 +2,9 @@
 
 Install and configure mitogen on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-mitogen.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-mitogen)|[![github](https://github.com/robertdebock/ansible-role-mitogen/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mitogen/actions)|[![quality](https://img.shields.io/ansible/quality/27431)](https://galaxy.ansible.com/robertdebock/mitogen)|[![downloads](https://img.shields.io/ansible/role/d/27431)](https://galaxy.ansible.com/robertdebock/mitogen)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-mitogen.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-mitogen)|[![github](https://github.com/robertdebock/ansible-role-mitogen/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mitogen/actions)|[![quality](https://img.shields.io/ansible/quality/27431)](https://galaxy.ansible.com/robertdebock/mitogen)|[![downloads](https://img.shields.io/ansible/role/d/27431)](https://galaxy.ansible.com/robertdebock/mitogen)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-mitogen.svg)](https://github.com/robertdebock/ansible-role-mitogen/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
