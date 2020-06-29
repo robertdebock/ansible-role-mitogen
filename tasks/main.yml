@@ -1,5 +1,8 @@
 ---
 # tasks file for mitogen
+- name: include assert.yml
+  include_tasks: assert.yml
+
 - name: find site-package location
   command: "python{{ ansible_python.version.major }} -c 'import site; print(site.getsitepackages()[0])'"
   register: mitogen_site_packages_path

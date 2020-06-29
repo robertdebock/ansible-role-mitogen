@@ -1,0 +1,6 @@
+---
+- name: test if mitogen_ansible_file is set correctly
+  assert:
+    that:
+      - mitogen_ansible_file is defined
+      - mitogen_ansible_file | length > 0
