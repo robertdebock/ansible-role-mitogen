@@ -21,9 +21,6 @@
     dest: "{{ mitogen_site_packages_path.stdout }}"
     remote_src: yes
     creates: "{{ mitogen_site_packages_path.stdout }}/mitogen-stable"
-  register: mitogen_install_mitogen
-  until: mitogen_install_mitogen is succeeded
-  retries: 3
 
 - name: configure ansible to use mitogen
   ini_file:
