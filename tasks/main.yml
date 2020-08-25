@@ -14,6 +14,7 @@
     path: "{{ mitogen_site_packages_path.stdout }}"
     state: directory
     recurse: yes
+    mode: "0755"
 
 - name: install mitogen
   unarchive:
@@ -21,6 +22,7 @@
     dest: "{{ mitogen_site_packages_path.stdout }}"
     remote_src: yes
     creates: "{{ mitogen_site_packages_path.stdout }}/mitogen-stable"
+    mode: "0750"
 
 - name: configure ansible to use mitogen
   ini_file:
@@ -28,6 +30,7 @@
     section: defaults
     option: strategy_plugins
     value: "{{ mitogen_site_packages_path.stdout }}/mitogen-stable/ansible_mitogen/plugins/strategy"
+    mode: preserve
   become: yes
 
 - name: configure ansible to use mitogen strategy
@@ -36,4 +39,5 @@
     section: defaults
     option: strategy
     value: mitogen_linear
+    mode: preserve
   become: yes
