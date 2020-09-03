@@ -13,7 +13,6 @@
   file:
     path: "{{ mitogen_site_packages_path.stdout }}"
     state: directory
-    recurse: yes
     mode: "0755"
 
 - name: install mitogen
