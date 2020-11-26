@@ -1,4 +1,5 @@
 ---
+
 - name: test if mitogen_ansible_file is set correctly
   assert:
     that:
