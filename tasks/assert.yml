@@ -4,4 +4,5 @@
   assert:
     that:
       - mitogen_ansible_file is defined
+      - mitogen_ansible_file is string
     quiet: yes
