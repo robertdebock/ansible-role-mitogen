@@ -13,13 +13,13 @@
   check_mode: no
 
 - name: create site-packages location
-  file:
+  ansible.builtin.file:
     path: "{{ mitogen_site_packages_path.stdout }}"
     state: directory
     mode: "0755"
 
 - name: install mitogen
-  unarchive:
+  ansible.builtin.unarchive:
     src: https://github.com/dw/mitogen/archive/stable.zip
     dest: "{{ mitogen_site_packages_path.stdout }}"
     remote_src: yes
@@ -27,7 +27,7 @@
     mode: "0750"
 
 - name: configure ansible to use mitogen
-  ini_file:
+  community.general.ini_file:
     path: "{{ mitogen_ansible_file }}"
     section: defaults
     option: strategy_plugins
@@ -36,7 +36,7 @@
   become: yes
 
 - name: configure ansible to use mitogen strategy
-  ini_file:
+  community.general.ini_file:
     path: "{{ mitogen_ansible_file }}"
     section: defaults
     option: strategy
