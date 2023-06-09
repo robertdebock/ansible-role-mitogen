@@ -5,4 +5,5 @@
     that:
       - mitogen_ansible_file is defined
       - mitogen_ansible_file is string
+      - mitogen_ansible_file is not none
     quiet: yes
