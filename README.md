@@ -2,9 +2,9 @@
 
 Install and configure mitogen on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-mitogen/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mitogen/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-mitogen/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-mitogen)|[![quality](https://img.shields.io/ansible/quality/27431)](https://galaxy.ansible.com/robertdebock/mitogen)|[![downloads](https://img.shields.io/ansible/role/d/27431)](https://galaxy.ansible.com/robertdebock/mitogen)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-mitogen.svg)](https://github.com/robertdebock/ansible-role-mitogen/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-mitogen/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mitogen/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-mitogen/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-mitogen)|[![downloads](https://img.shields.io/ansible/role/d/24540)](https://galaxy.ansible.com/robertdebock/mitogen)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-mitogen.svg)](https://github.com/robertdebock/ansible-role-mitogen/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -92,7 +92,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-mitogen/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-mitogen/issues).
 
 ## [License](#license)
 
