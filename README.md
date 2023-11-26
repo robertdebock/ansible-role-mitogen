@@ -1,4 +1,4 @@
-# Ansible role [mitogen](#mitogen)
+# [Ansible role mitogen](#mitogen)
 
 Install and configure mitogen on your system.
 
