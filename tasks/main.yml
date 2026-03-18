@@ -9,7 +9,7 @@
 
 - name: Find site-package location
   ansible.builtin.command:
-    cmd: "python{{ ansible_python.version.major }} -c 'import site; print(site.getsitepackages()[0])'"
+    cmd: "python{{ ansible_facts['python'].version.major }} -c 'import site; print(site.getsitepackages()[0])'"
   register: mitogen_site_packages_path
   changed_when: false
   check_mode: false
